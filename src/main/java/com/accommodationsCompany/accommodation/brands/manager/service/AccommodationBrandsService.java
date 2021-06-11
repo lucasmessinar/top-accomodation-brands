@@ -1,5 +1,8 @@
-import dto.AccommodationBrandDto;
-import dto.TopAccommodationBrandDto;
+package com.accommodationsCompany.accommodation.brands.manager.service;
+
+import com.accommodationsCompany.accommodation.brands.manager.AccommodationBrandNode;
+import com.accommodationsCompany.accommodation.brands.manager.dto.TopAccommodationBrandDto;
+import com.accommodationsCompany.accommodation.brands.manager.dto.AccommodationBrandDto;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -8,8 +11,10 @@ import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
 import java.util.stream.Collectors;
+import org.springframework.stereotype.Service;
 
-public class AccommodationsBrandService {
+@Service
+public class AccommodationBrandsService {
 
   public List<TopAccommodationBrandDto> calculateKTopBrandsWithMoreAccommodations(List<AccommodationBrandDto> brands,
       int k) {

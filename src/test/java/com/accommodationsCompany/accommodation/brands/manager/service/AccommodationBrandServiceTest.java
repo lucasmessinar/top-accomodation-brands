@@ -1,5 +1,7 @@
-import dto.AccommodationBrandDto;
-import dto.TopAccommodationBrandDto;
+package com.accommodationsCompany.accommodation.brands.manager.service;
+
+import com.accommodationsCompany.accommodation.brands.manager.dto.AccommodationBrandDto;
+import com.accommodationsCompany.accommodation.brands.manager.dto.TopAccommodationBrandDto;
 import java.util.ArrayList;
 import java.util.List;
 import org.junit.jupiter.api.Assertions;
@@ -7,7 +9,7 @@ import org.junit.jupiter.api.Test;
 
 public class AccommodationBrandServiceTest {
 
-  private final AccommodationsBrandService accommodationsBrandService = new AccommodationsBrandService();
+  private final AccommodationBrandsService accommodationBrandsService = new AccommodationBrandsService();
 
   @Test
   public void testBasicCaseWithUnorderedTopLevelBrandsInList() {
@@ -20,7 +22,7 @@ public class AccommodationBrandServiceTest {
     inputDtos.add(new AccommodationBrandDto(7L, null, 5));
 
     List<TopAccommodationBrandDto> kTopAccommodations =
-        accommodationsBrandService.calculateKTopBrandsWithMoreAccommodations(inputDtos, 2);
+        accommodationBrandsService.calculateKTopBrandsWithMoreAccommodations(inputDtos, 2);
     Assertions.assertEquals(2, kTopAccommodations.size());
     Assertions.assertEquals(15, kTopAccommodations.get(1).getPropsCount());
     Assertions.assertEquals(4L, kTopAccommodations.get(1).getBrandId());
@@ -36,7 +38,7 @@ public class AccommodationBrandServiceTest {
     inputDtos.add(new AccommodationBrandDto(3L, null, 3));
 
     List<TopAccommodationBrandDto> kTopAccommodations =
-        accommodationsBrandService.calculateKTopBrandsWithMoreAccommodations(inputDtos, 4);
+        accommodationBrandsService.calculateKTopBrandsWithMoreAccommodations(inputDtos, 4);
     Assertions.assertEquals(3, kTopAccommodations.size());
     Assertions.assertEquals(3, kTopAccommodations.get(0).getPropsCount());
     Assertions.assertEquals(3L, kTopAccommodations.get(0).getBrandId());

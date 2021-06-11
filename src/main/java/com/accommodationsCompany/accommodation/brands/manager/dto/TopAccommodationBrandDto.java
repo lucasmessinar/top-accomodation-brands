@@ -1,4 +1,4 @@
-package dto;
+package com.accommodationsCompany.accommodation.brands.manager.dto;
 
 public class TopAccommodationBrandDto {
 

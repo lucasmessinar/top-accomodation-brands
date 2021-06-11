@@ -1,3 +1,5 @@
+package com.accommodationsCompany.accommodation.brands.manager;
+
 import java.util.ArrayList;
 import java.util.List;
 
