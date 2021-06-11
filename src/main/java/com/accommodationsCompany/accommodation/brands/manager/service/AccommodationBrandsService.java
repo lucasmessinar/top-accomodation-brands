@@ -1,6 +1,6 @@
 package com.accommodationsCompany.accommodation.brands.manager.service;
 
-import com.accommodationsCompany.accommodation.brands.manager.AccommodationBrandNode;
+import com.accommodationsCompany.accommodation.brands.manager.model.AccommodationBrandNode;
 import com.accommodationsCompany.accommodation.brands.manager.dto.TopAccommodationBrandDto;
 import com.accommodationsCompany.accommodation.brands.manager.dto.AccommodationBrandDto;
 import java.util.Comparator;

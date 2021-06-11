@@ -1,4 +1,4 @@
-package com.accommodationsCompany.accommodation.brands.manager;
+package com.accommodationsCompany.accommodation.brands.manager.model;
 
 import java.util.ArrayList;
 import java.util.List;
